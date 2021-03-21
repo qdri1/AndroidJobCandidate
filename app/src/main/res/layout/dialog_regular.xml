@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_rounded_background"
+    android:paddingStart="24dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="24dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Error"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/tvDescription"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        tools:text="Check internet connection and click retry"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="?android:attr/buttonBarButtonStyle"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorGray"
+            android:background="@android:color/transparent"
+            android:id="@+id/btnNegative"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            tools:text="Cancel"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="?android:attr/buttonBarButtonStyle"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:background="@android:color/transparent"
+            android:id="@+id/btnPositive"
+            android:layout_width="0dp"
+            tools:text="Retry"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
